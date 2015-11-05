@@ -9,8 +9,8 @@ room111, UdK, medienhaus, kleistpark
 
 dates
 -----
-- [ ] [05nov 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151105): introduction and presentation of course
-- [ ] 12nov 14-17
+- [x] [05nov 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151105): introduction and presentation. clicks
+- [ ] 12nov 14-17: cuts
 - [ ] 19nov 14-16
 - [ ] 26nov 14-17
 - [ ] 03dec 14-16
