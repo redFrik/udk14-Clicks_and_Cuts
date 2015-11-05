@@ -21,6 +21,8 @@ hardware
 * 1.5v battery
 * wires
 * resonant boxes
+* 220uF capacitor
+* 470ohm resistor
 
 click experiments
 --
@@ -67,7 +69,7 @@ listening
 example supercollider code
 --
 
-´´´
+```
 s.boot
 
 {LFPulse.ar(0.7)}.scope //lots of dc offset - bad for the speaker
@@ -91,4 +93,4 @@ s.boot
 {BPF.ar(LFPulse.ar(1)+LFPulse.ar(1.5), 99, 0.1, 4)}.scope
 {HPF.ar(LFPulse.ar(1)+LFPulse.ar(1.5), 9)}.scope
 {BPF.ar(Impulse.ar([5, 6]), [2000, 3000], 0.1, 10)}.scope
-´´´
+```
