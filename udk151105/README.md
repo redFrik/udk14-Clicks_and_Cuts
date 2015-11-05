@@ -43,13 +43,13 @@ and also try putting them into boxes...
 
 notice how different they all sound.
 
-next connect a big capacitor (here 220uF). you should only get one click sound from the speaker. swap cables around and you will get another one. this is because energy is stored in the capacitor and it will not let more through until it is discharged (by for example swapping the poles around).
+next connect a big capacitor (here 220uF) across the speaker wires (the thereby also across the battery). you should only get one click sound from the speaker. swap cables around and to get another click. the reason it only click once is because energy is stored in the capacitor and it need to be discharged first (by for example swapping the poles around) before the speaker can click again.
 
 add a resistor (here 470ohm) in parallell to the capacitor like this...
 
 ![filter.jpg](filter.jpg?raw=true "filter.jpg")
 
-now the click should be there each time you connect the cables, although it will sound a bit 'cleaner'. the resistor will slowly drain or bleed away the energy stored in the capacitor.
+now the click should be there each time you connect the cables, although it will sound a bit 'cleaner'. we have made a filter. the resistor will slowly drain or bleed away the energy stored in the capacitor.
 
 reading
 --
