@@ -26,7 +26,7 @@ make an endless/seamless loop.
 
 1. open audacity and record something like your voice singing aaaaa...
 
-2. cut away the beginning and end so that itis more or less a stable sound.
+2. cut away the beginning and the end so that you have a more or less stable sound.
 
 ![clickless_endless_00.png](clickless_endless_00.png?raw=true "clickless_endless_00.png")
 
@@ -47,12 +47,12 @@ make an endless/seamless loop.
 ![clickless_endless_04.png](clickless_endless_04.png?raw=true "clickless_endless_04.png")
 
 the sound should now repeat without discontinuities (no clicks or sudden jumps).
-save it as a wav or aiff soundfile and make a few more.
+save it as a .wav or .aiff soundfile and make a few more.
 
 exercise2
 --
 
-use supercollider to make an endlessly varying sound texture composition.
+use [supercollider](http://supercollider.github.io/download.html) to make an endlessly varying sound texture composition.
 
 ```
 //scrambler.scd
