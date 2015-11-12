@@ -60,9 +60,9 @@ s.boot;
 
 (
 ~buffers= [
-    "/Users/Stirling/Desktop/endlessvoice1.aiff",
-    "/Users/Stirling/Desktop/endlessvoice2.aiff",
-    "/Users/Stirling/Desktop/endlessvoice3.aiff"
+    "/Users/abc/Desktop/endlessvoice1.aiff", //edit here to match your own soundfiles
+    "/Users/abc/Desktop/endlessvoice2.aiff",
+    "/Users/abc/Desktop/endlessvoice3.aiff"
     //add more buffers here
 ].collect{|path| Buffer.readChannel(s, path, channels:[0])};
 SynthDef(\sampler, {|buf, atk= 5, sus= 5, rel= 5, rate= 1|
