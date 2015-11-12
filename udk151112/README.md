@@ -88,3 +88,10 @@ Tdef(\player, {
 
 Tdef(\player).stop;
 ```
+
+exercise3
+--
+
+now do the same but with some samples from here...
+
+<http://www.musicradar.com/news/tech/free-music-samples-download-loops-hits-and-multis-627820>
