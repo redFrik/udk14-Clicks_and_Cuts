@@ -31,8 +31,25 @@ play with sample rate reduction in audacity
 4. last copy the sound and past it into a few other tracks. use the shift tool <-> to move it in time, again change rate in the track menu. make a short composition
 ![crush_02.png](crush_02.png?raw=true "crush_02.png")
 
-
 exercise2
+--
+
+1. record a new sound in audacity
+
+2. apply the 'Normalize...' effect from the effect menu
+
+3. in the track menu, use 'Set Rate' 'Other...' and reduce it to something like 1000 Hz.
+![rate_00.png](rate_00.png?raw=true "rate_00.png")
+
+4. apply the 'Change Speed...' effect from the effect menu
+![rate_01.png](rate_01.png?raw=true "rate_01.png")
+
+5. set the 'Speed Multiplier' to something like 10
+![rate_02.png](rate_02.png?raw=true "rate_02.png")
+
+now experiment with different sounds, samplerates, speeds.
+
+exercise3
 --
 
 use [supercollider](http://supercollider.github.io/download.html) to apply sample rate reduction and bit depth reduction
@@ -81,7 +98,7 @@ s.boot;
 {CombN.ar(Latch.ar((SoundIn.ar*SinOsc.ar(MouseX.kr(1, 1000, 1))).round(0.5**MouseY.kr(0.01, 10)), Impulse.ar((SampleRate.ir*MouseY.kr(0, 0.5)))), 0.25, 0.25, 2)!2}.play
 ```
 
-exercise3
+exercise4
 --
 
 now do the same but with some samples from here...
