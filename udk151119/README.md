@@ -23,15 +23,12 @@ play with sample rate reduction in audacity
 1. open audacity and record something like your voice singing aaaaa...
 
 2. apply the 'Normalize...' effect from the effect menu
-
 ![crush_00.png](crush_00.png?raw=true "crush_00.png")
 
 3. then click on the small track menu on the left and select 'Set Rate'. select 8000 Hz
-
 ![crush_01.png](crush_01.png?raw=true "crush_01.png")
 
 4. last copy the sound and past it into a few other tracks. use the shift tool <-> to move it in time, again change rate in the track menu. make a short composition
-
 ![crush_02.png](crush_02.png?raw=true "crush_02.png")
 
 
