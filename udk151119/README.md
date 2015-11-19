@@ -151,3 +151,29 @@ b= Buffer.read(s, "/Users/asdf/musicradar-nu-disco-samples/125bpm Loops n Lines/
 //+ring modulation
 {CombN.ar(Latch.ar((PlayBuf.ar(b.numChannels, b, 1, loop:1)*SinOsc.ar(MouseX.kr(1, 1000, 1))).round(0.5**MouseY.kr(0.01, 10)), Impulse.ar((SampleRate.ir*MouseY.kr(0, 0.5)))), 0.25, 0.25, 2)}.play
 ```
+
+extra
+--
+
+```
+//changing playback speed with mouse
+{PlayBuf.ar(b.numChannels, b, MouseX.kr(-1, 2).poll, loop:1).round(0.5**MouseY.kr(1, 16))}.play;
+```
+
+extra2
+--
+
+```
+//my crusher - use as a general effect - XFade2 with MouseX crossfades between 'dry' and 'wet' sound
+(
+{
+    var src, efx;
+    //src= PlayBuf.ar(b.numChannels, b, 1, loop:1); //soundfile
+    src= SoundIn.ar!2;  //mic or line in
+    efx= src.round(0.5**4);
+    efx= Latch.ar(efx, Impulse.ar(1000));
+    efx= efx+CombN.ar(efx, 0.25, 0.25, 2);
+    XFade2.ar(src, efx, MouseX.kr(-1, 1));
+}.play
+)
+```
