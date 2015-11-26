@@ -293,6 +293,9 @@ void draw() {
 
 extra
 --
+
+applying filters (effects) to video (images)
+
 ```
 //filter images
 //note that there are better and more efficient ways to do this using shaders
@@ -317,6 +320,7 @@ void draw() {
     }
     image(video, 0, 0, width, height);
 }
+```
 
 extra2
 --
