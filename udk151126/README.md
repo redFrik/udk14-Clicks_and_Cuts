@@ -3,7 +3,7 @@ graphics in processing
 
 please bring laptop.
 
-and download and install processing <http://processing.org>. version 3 but also the older version 2 will work.
+and download and install processing version 3 <http://processing.org>. version 2 will work except for the last audio examples.
 
 
 excercise1
@@ -50,6 +50,25 @@ void draw() {
     if (video.available() == true) {
         video.read();
     }
+    image(video, 0, 0, width, height);
+}
+```
+
+now downsample
+
+```
+import processing.video.*;
+Capture video;
+
+void setup() {
+    size(640, 480);
+    video = new Capture(this, width, height);
+    video.start();
+}
+void draw() {
+    if (video.available() == true) {
+        video.read();
+    }
     if (frameCount%60==0) {  //downsample to about 1 frame per second
         image(video, 0, 0, width, height);
     }
@@ -82,7 +101,10 @@ void draw() {
 excercise3
 --
 
+![lines.png](lines.png?raw=true "lines.png")
+
 ```
+//lines
 import processing.video.*;
 Capture video;
 void setup() {
@@ -105,7 +127,10 @@ now try making horizontal lines in the same manner.
 
 and to do big distinct pixels use smooth(0); or noSmooth();
 
+![cubes.png](cubes.png?raw=true "cubes.png")
+
 ```
+//cubes
 import processing.video.*;
 Capture video;
 void setup() {
@@ -128,7 +153,8 @@ void draw() {
 watch
 --
 
-<https://www.youtube.com/watch?v=omDE_h1T7_A> (if not all at least the section starting at 13:52)
+<https://www.youtube.com/watch?v=omDE_h1T7_A> Ryoji Ikeda - Test Pattern (live at Disslab)
+(if not all at least the section starting at 13:52)
 
 exercise4
 --
@@ -154,6 +180,8 @@ void draw() {
 }
 ```
 
+![real.png](real.png?raw=true "real.png")
+
 ```
 //real
 import processing.sound.*;
@@ -174,6 +202,10 @@ void draw() {
     line(width*0.5, height-i, width, height-i);  //and these
 }
 ```
+
+![real2.png](real2.png?raw=true "real2.png")
+
+stereo sound input.
 
 ```
 //real2
@@ -213,6 +245,10 @@ void draw() {
 ```
 
 mirroring example...
+
+![real3.png](real3.png?raw=true "real3.png")
+
+here we take the fft data and display it.
 
 ```
 //real3
