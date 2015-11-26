@@ -236,10 +236,10 @@ void draw() {
     fft1.analyze();
     for (int i = 0; i < bands; i++) {
         float val0= fft0.spectrum[bands-1-i];   //draw lowest frequencies at the bottom
-        stroke(max(0, val0*255));
+        stroke(min(255, val0*1000));    //boost values and clip at 255
         line(0, i*step, width*0.5, i*step);
         float val1= fft1.spectrum[bands-1-i];   //draw lowest frequencies at the bottom
-        stroke(max(0, val1*255));
+        stroke(min(255, val1*1000));
         line(width*0.5, i*step, width, i*step);
     }
 }
@@ -278,11 +278,11 @@ void draw() {
     fft1.analyze();
     for (int i = 0; i < bands; i++) {
         float val0= fft0.spectrum[i];
-        stroke(max(0, val0*255));
+        stroke(min(255, val0*1000));
         line(0, height*0.5+i, width*0.5, height*0.5+i);  //play with these numbers
         line(0, height*0.5-i, width*0.5, height*0.5-i);  //and these
         float val1= fft1.spectrum[i];
-        stroke(max(0, val1*255));
+        stroke(min(255, val1*1000));
         line(width*0.5, height*0.5+i, width, height*0.5+i);  //here too
         line(width*0.5, height*0.5-i, width, height*0.5-i);  //and here
     }
@@ -344,18 +344,56 @@ void setup() {
     input.start();
     fft = new FFT(this, bands);
     fft.input(input);
-    pg= createGraphics(width, bands);
+    pg= createGraphics(bands, bands);
 }
 void draw() {
     fft.analyze();
     pg.beginDraw();
     for (int i = 0; i < bands; i++) {
         float val= fft.spectrum[bands-1-i];   //draw lowest frequencies at the bottom
-        pg.stroke(max(0, val*255));
-        pg.line(0, i, width, i);
+        pg.stroke(min(255, val*1000));
+        pg.line(0, i, bands, i);
     }
     pg.endDraw();
     pg.filter(BLUR, 2);
-    image(pg, 0, 0, width, height);  //stretch out pg to fill full window height
+    image(pg, 0, 0, width, height);  //stretch out pg to fill full window
+}
+```
+
+extra3
+--
+
+```
+//scrolling spectrogram
+//could be improved with exponential mapping
+import processing.sound.*;
+AudioIn input;
+AudioDevice device;
+FFT fft;
+final int bands = 128;
+float step;
+PGraphics pg;
+
+void setup() {
+    size(640, 480);
+    device = new AudioDevice(this, 44100, bands);
+    input = new AudioIn(this, 0);  //mic or line in left
+    input.start();
+    fft = new FFT(this, bands);
+    fft.input(input);
+    pg= createGraphics(width, bands);
+    pg.smooth(0);
+}
+void draw() {
+    fft.analyze();
+    pg.beginDraw();
+    int x= frameCount%width;  //wrap around
+    for (int i = 0; i < bands; i++) {
+        float val= fft.spectrum[bands-1-i];   //draw lowest frequencies at the bottom
+        pg.stroke(min(255, val*1000));
+        pg.rect(x, i, 1, 1);
+    }
+    pg.endDraw();
+    image(pg, 0, 0, width, height);  //stretch out pg to fill full window
 }
 ```
