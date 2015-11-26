@@ -12,7 +12,7 @@ dates
 - [x] [05nov 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151105): introduction and presentation. clicks
 - [x] [12nov 14-17](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151112): cuts
 - [x] [19nov 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151119): crush
-- [ ] [26nov 14-17](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151126): processing
+- [x] [26nov 14-17](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151126): processing
 - [ ] 03dec 14-16
 - [ ] 10dec 14-17
 - [ ] 17dec 14-16
