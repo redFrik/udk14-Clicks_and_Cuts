@@ -101,8 +101,6 @@ void draw() {
 excercise3
 --
 
-![lines.png](lines.png?raw=true "lines.png")
-
 ```
 //lines
 import processing.video.*;
@@ -122,12 +120,11 @@ void draw() {
     }
 }
 ```
+![lines.png](lines.png?raw=true "lines.png")
 
 now try making horizontal lines in the same manner.
 
 and to do big distinct pixels use smooth(0); or noSmooth();
-
-![cubes.png](cubes.png?raw=true "cubes.png")
 
 ```
 //cubes
@@ -150,6 +147,8 @@ void draw() {
 }
 ```
 
+![cubes.png](cubes.png?raw=true "cubes.png")
+
 watch
 --
 
@@ -158,6 +157,8 @@ watch
 
 exercise4
 --
+
+this example just use randomly sized rectangles
 
 ```
 //fake
@@ -180,7 +181,7 @@ void draw() {
 }
 ```
 
-![real.png](real.png?raw=true "real.png")
+here we get the amplitude of the audio input (mic/line)
 
 ```
 //real
@@ -203,9 +204,9 @@ void draw() {
 }
 ```
 
-![real2.png](real2.png?raw=true "real2.png")
+![real.png](real.png?raw=true "real.png")
 
-stereo sound input.
+spectrum analysis (fft) with stereo sound input.
 
 ```
 //real2
@@ -244,11 +245,9 @@ void draw() {
 }
 ```
 
-mirroring example...
+![real2.png](real2.png?raw=true "real2.png")
 
-![real3.png](real3.png?raw=true "real3.png")
-
-here we take the fft data and display it.
+similar but with mirroring...
 
 ```
 //real3
@@ -289,3 +288,5 @@ void draw() {
     }
 }
 ```
+
+![real3.png](real3.png?raw=true "real3.png")
