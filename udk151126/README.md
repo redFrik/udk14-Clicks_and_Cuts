@@ -28,14 +28,16 @@ void draw() {
 }
 ```
 
-etc. animate some simple rectangles
+etc.
+
+now animate some simple rectangles, play with positions and sizes.
 
 excercise2
 --
 
 use built-in laptop camera or connect an external usb webcamera.
 
-´´´
+```
 import processing.video.*;
 Capture video;
 
@@ -52,7 +54,7 @@ void draw() {
         image(video, 0, 0, width, height);
     }
 }
-´´´
+```
 
 next example is drawing a black rectangle with some alpha - this is a way to create trails.
 
