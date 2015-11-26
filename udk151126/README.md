@@ -290,3 +290,68 @@ void draw() {
 ```
 
 ![real3.png](real3.png?raw=true "real3.png")
+
+extra
+--
+```
+//filter images
+//note that there are better and more efficient ways to do this using shaders
+import processing.video.*;
+Capture video;
+
+void setup() {
+    size(640, 480);
+    video = new Capture(this, width, height);
+    video.start();
+}
+void draw() {
+    if (video.available() == true) {
+        video.read();
+        video.filter(THRESHOLD, 0.5);  //0.0-1.0
+        //video.filter(GRAY);
+        //video.filter(INVERT);
+        //video.filter(POSTERIZE, 5);  //2-255
+        //video.filter(BLUR, 4);  //1-~64
+        //video.filter(ERODE);
+        //video.filter(DILATE);
+    }
+    image(video, 0, 0, width, height);
+}
+
+extra2
+--
+
+(advanced) drawing to a PGraphics, applying a filter and then stretching out to display dimensions
+
+```
+//filter graphics
+import processing.sound.*;
+AudioIn input;
+AudioDevice device;
+FFT fft;
+final int bands = 128;
+float step;
+PGraphics pg;
+
+void setup() {
+    size(640, 480);
+    device = new AudioDevice(this, 44100, bands);
+    input = new AudioIn(this, 0);  //mic or line in left
+    input.start();
+    fft = new FFT(this, bands);
+    fft.input(input);
+    pg= createGraphics(width, bands);
+}
+void draw() {
+    fft.analyze();
+    pg.beginDraw();
+    for (int i = 0; i < bands; i++) {
+        float val= fft.spectrum[bands-1-i];   //draw lowest frequencies at the bottom
+        pg.stroke(max(0, val*255));
+        pg.line(0, i, width, i);
+    }
+    pg.endDraw();
+    pg.filter(BLUR, 2);
+    image(pg, 0, 0, width, height);  //stretch out pg to fill full window height
+}
+```
