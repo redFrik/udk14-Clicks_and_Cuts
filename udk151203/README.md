@@ -15,7 +15,7 @@ sin(4.71) ≈ -1.0    //bottom of curve
 sin(6.28) ≈ 0.0     //back to beginning (zero)
 ```
 
-so with the x value going in small steps from 0 to 2*pi (2*3.1415≈ 6.28), we get a smooth sine curve.
+so with the x value going in small steps from 0 to 2pi (2 * 3.1415≈ 6.28), we get a smooth sine curve.
 
 
 processing examples
@@ -33,8 +33,8 @@ void draw() {
 ```
 
 the `100` above is scaling from -1.0 to 1.0 to -100 to 100 pixels in height.
-the `+(height*0.5)` is just offsetting the drawing down to the middle of the screen. so the final curve will vary between 600*0.5-100= 200 and 600*0.5+100= 400.
-the `frameCount*0.01` counts slowly upwards in 0.01 steps.  try changing this number to something else (0.1)
+the `+(height*0.5)` is just offsetting the drawing down to the middle of the screen. so the final curve will vary between 600 * 0.5 - 100 = 200 and 600 * 0.5 + 100 = 400.
+the `frameCount*0.01` counts slowly upwards in 0.01 steps.  try changing this number to something else (e.g. 0.1)
 
 the first example above just draws one little black dot each frame update (60 times per second by default).
 we can draw many more each frame and plot a complete sine curve each frame.
@@ -149,7 +149,7 @@ void draw() {
     }
 }
 ```
-i/10.0*6.28 is what makes the dots spread out evenly (i is index 0-9 and /10.0*6.28 scales 0-9 from 0.0 up to two pi).
+i / 10.0 * 6.28 is what makes the dots spread out evenly (i is index 0-9 and /10.0 * 6.28 scales 0-9 from 0.0 up to two pi).
 try chaning one of the 0.01 and see what happens.
 
 and again start adding sin and cos functions here and there...
