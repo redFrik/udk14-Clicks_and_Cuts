@@ -168,6 +168,23 @@ void draw() {
 }
 ```
 
+more advanced example...
+
+```
+void setup() {
+    size(800, 600);
+}
+void draw() {
+    float num= 100;
+    for(int i= 0; i<num; i++) {
+        float y= sin(frameCount*0.04+cos(i/num*TWO_PI))*sin(frameCount*0.03)*(height*0.3)+(height*0.5);
+        float x= cos(frameCount*0.05+sin(i/num*TWO_PI))*(width*0.3)+(width*0.5);
+        ellipse(x, y, sin(frameCount*0.07)*150, sin(frameCount*0.06)*150);
+    }
+}
+```
+
+
 listen
 --
 
