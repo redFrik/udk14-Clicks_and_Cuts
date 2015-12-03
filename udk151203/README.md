@@ -186,13 +186,13 @@ void draw() {
 now try out these examples that we wrote in class...
 
 * [sketch_151203a](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203a/sketch_151203a.pde)
-* [sketch_151203b](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203a/sketch_151203b.pde)
-* [sketch_151203c](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203a/sketch_151203c.pde)
-* [sketch_151203d](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203a/sketch_151203d.pde)
-* [sketch_151203e](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203a/sketch_151203e.pde)
-* [sketch_151203f](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203a/sketch_151203f.pde)
-* [sketch_151203g](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203a/sketch_151203g.pde)
-* [sketch_151203h](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203a/sketch_151203h.pde)
+* [sketch_151203b](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203b/sketch_151203b.pde)
+* [sketch_151203c](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203c/sketch_151203c.pde)
+* [sketch_151203d](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203d/sketch_151203d.pde)
+* [sketch_151203e](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203e/sketch_151203e.pde)
+* [sketch_151203f](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203f/sketch_151203f.pde)
+* [sketch_151203g](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203g/sketch_151203g.pde)
+* [sketch_151203h](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203h/sketch_151203h.pde)
 
 listen
 --
