@@ -183,7 +183,16 @@ void draw() {
     }
 }
 ```
+now try out these examples that we wrote in class...
 
+* [sketch_151203a](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203a/sketch_151203a.pde)
+* [sketch_151203b](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203a/sketch_151203b.pde)
+* [sketch_151203c](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203a/sketch_151203c.pde)
+* [sketch_151203d](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203a/sketch_151203d.pde)
+* [sketch_151203e](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203a/sketch_151203e.pde)
+* [sketch_151203f](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203a/sketch_151203f.pde)
+* [sketch_151203g](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203a/sketch_151203g.pde)
+* [sketch_151203h](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203/sketch_151203a/sketch_151203h.pde)
 
 listen
 --
@@ -208,3 +217,71 @@ cut away a little bit in the beginning and listen to how the click changes chara
 last set the cursor at the end, select Silence from the generate menu and make it around 2 seconds long.
 select all and apply the reverb effect - play around with different reverb settings.
 
+supercollider
+--
+
+experiments with simple sines
+
+```
+s.boot
+s.scope
+
+//first notice lack of click in the beginning - only in the end (when cmd+. to stop)
+{SinOsc.ar(400, 0.5*pi)}.play
+
+//because there is a built-in default fade-in attack time (0.02) when using {}.play
+{SinOsc.ar(400, 0.5*pi)}.play(fadeTime:1);
+
+{SinOsc.ar(400, 0.5*pi)}.play(fadeTime:0) //no attack and start sine at 1.0 by setting phase to half-pi
+{SinOsc.ar(100, 0.1*pi, Line.ar(1, 0, 0.04))!2}.play(fadeTime:0) //tune attack and add quick fadeout, kickdrum
+{GVerb.ar(SinOsc.ar(100, 0.1*pi, Line.ar(1, 0, 0.04)), 50)}.play(fadeTime:0)
+{FreeVerb.ar(SinOsc.ar(100, 0.1*pi, Line.ar(1, 0, 0.04)), 0.5)!2}.play(fadeTime:0)
+
+
+//using sine oscillators as 0/1 rhythm gates
+{SinOsc.ar(400) * (SinOsc.ar(1.4)>0.9)}.play(fadeTime:0)
+
+{SinOsc.ar(400) * (SinOsc.ar(SinOsc.ar(1.5)*10.8+0.6)>0.9)}.play(fadeTime:0)
+
+//multi channel expansion
+{SinOsc.ar([400, 800]) * (SinOsc.ar(SinOsc.ar([1.5, 1.75])*10.8+0.6)>0.9)}.play(fadeTime:0)
+
+//using Splay to spread out x channels into the standard two channel stereo field
+{Splay.ar(SinOsc.ar([400, 800, 900, 1230]) * (SinOsc.ar(SinOsc.ar([1.5, 1.75])*10.8+0.6)>0.9))}.play(fadeTime:0)
+
+
+{SinOsc.ar([500, 6000]) * (SinOsc.ar([3, 4])>0)}.play
+
+{Splay.ar(SinOsc.ar([500, 6000, 700, 503, 654]) * (SinOsc.ar([3, 4, 5, 6, 7])>0))}.play
+
+{SinOsc.ar([500, 700]) * (SinOsc.ar([2, 3])>SinOsc.ar(0.1))}.play(fadeTime: 0)
+
+
+b= [1, 2, 3, 4, 5, 6, 7, 8, 9];
+{Splay.ar(SinOsc.ar( b*100 ) * (SinOsc.ar(b)>0))}.play
+
+b= (1..5);  //same as b= [1, 2, 3, 4, 5]
+{Splay.ar(SinOsc.ar( b*100 ) * (SinOsc.ar(b)>0))}.play
+
+b= (1..5);
+{Splay.ar(SinOsc.ar( b*100 ) * (SinOsc.ar(2)*SinOsc.ar(0.8)>0))}.play
+
+b= (1..5);
+{Splay.ar(SinOsc.ar( b*100 )+SinOsc.ar(b*50) * (SinOsc.ar(3)+SinOsc.ar(0.8)>0))}.play
+{Splay.ar(SinOsc.ar( b*100 )*SinOsc.ar(b*50) * (SinOsc.ar(3)+SinOsc.ar(0.8)>0))}.play
+
+{SinOsc.ar(500*SinOsc.ar(LFNoise2.ar(4)*100+300))}.play
+
+{Splay.ar(SinOsc.ar(500*SinOsc.ar(LFNoise2.ar([3,4,5,6,7])*100+300)))}.play
+```
+there is also the sin(x) function...
+
+```
+//check the post window
+{Sweep.ar(0, 1).poll; Silent.ar}.play
+{sin(Sweep.ar(0, 1)).poll; Silent.ar}.play
+
+//now listen and compare these two.  should be identical
+{sin(Sweep.ar(0, 2pi*400))}.play
+{SinOsc.ar(400)}.play
+```
