@@ -14,7 +14,7 @@ dates
 - [x] [19nov 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151119): crush
 - [x] [26nov 14-17](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151126): processing
 - [x] [03dec 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203): sines
-- [ ] 10dec 14-17
+- [ ] [10dec 14-17](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151210): spirals
 - [ ] 17dec 14-16
 
 note: every other week we do 3h
