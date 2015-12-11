@@ -21,7 +21,7 @@ so with the x value going in small steps from 0 to 2pi (2 * 3.1415≈ 6.28), we 
 processing examples
 --
 
-```
+```cpp
 void setup() {
     size(800, 600);
 }
@@ -39,7 +39,7 @@ the `frameCount*0.01` counts slowly upwards in 0.01 steps.  try changing this nu
 the first example above just draws one little black dot each frame update (60 times per second by default).
 we can draw many more each frame and plot a complete sine curve each frame.
 
-```
+```cpp
 void setup() {
     size(800, 600);
 }
@@ -55,7 +55,7 @@ void draw() {
 
 start playing with the numbers and also change the code inside the sin function.
 
-```
+```cpp
 void setup() {
     size(800, 600);
 }
@@ -71,7 +71,7 @@ void draw() {
 
 and start adding more sin functions here and there.
 
-```
+```cpp
 void setup() {
     size(800, 600);
 }
@@ -88,7 +88,7 @@ void draw() {
 
 try nesting them...
 
-```
+```cpp
 void setup() {
     size(800, 600);
 }
@@ -122,7 +122,7 @@ so cos(x) is the same as sin(pi*0.5+x)
 
 cos is mainly useful when you want to draw circles.
 
-```
+```cpp
 void setup() {
     size(800, 600);
 }
@@ -135,7 +135,7 @@ void draw() {
 
 here an example with 10 dots evenly distributed around a circle.
 
-```
+```cpp
 void setup() {
     size(800, 600);
 }
@@ -154,7 +154,7 @@ try chaning one of the 0.01 and see what happens.
 
 and again start adding sin and cos functions here and there...
 
-```
+```cpp
 void setup() {
     size(800, 600);
 }
@@ -170,7 +170,7 @@ void draw() {
 
 more advanced example...
 
-```
+```cpp
 void setup() {
     size(800, 600);
 }

@@ -9,7 +9,7 @@ and download and install processing version 3 <http://processing.org>. version 2
 excercise1
 --
 
-```
+```cpp
 void setup() {
     size(640, 480);
 }
@@ -18,7 +18,7 @@ void draw() {
 }
 ```
 
-```
+```cpp
 void setup() {
     size(640, 480);
 }
@@ -41,7 +41,7 @@ for the following to work you will need to install the video library. do it from
 
 ![video_library.png](video_library.png?raw=true "video_library.png")
 
-```
+```cpp
 import processing.video.*;
 Capture video;
 
@@ -60,7 +60,7 @@ void draw() {
 
 now downsample
 
-```
+```cpp
 import processing.video.*;
 Capture video;
 
@@ -81,7 +81,7 @@ void draw() {
 
 next example is drawing a black rectangle with some alpha - this is a way to create trails.
 
-```
+```cpp
 import processing.video.*;
 Capture video;
 
@@ -105,7 +105,7 @@ void draw() {
 excercise3
 --
 
-```
+```cpp
 //lines
 import processing.video.*;
 Capture video;
@@ -130,7 +130,7 @@ now try making horizontal lines in the same manner.
 
 and to do big distinct pixels use smooth(0); or noSmooth();
 
-```
+```cpp
 //cubes
 import processing.video.*;
 Capture video;
@@ -164,7 +164,7 @@ exercise4
 
 this example just use randomly sized rectangles
 
-```
+```cpp
 //fake
 void setup() {
     size(640, 480);
@@ -189,7 +189,7 @@ here we get the amplitude of the audio input (mic/line)
 
 you will need to install the sound library from within processing.
 
-```
+```cpp
 //real
 import processing.sound.*;
 AudioIn input;
@@ -214,7 +214,7 @@ void draw() {
 
 spectrum analysis (fft) with stereo sound input.
 
-```
+```cpp
 //real2
 import processing.sound.*;
 AudioIn input0, input1;
@@ -255,7 +255,7 @@ void draw() {
 
 similar but with mirroring...
 
-```
+```cpp
 //real3
 import processing.sound.*;
 AudioIn input0, input1;
@@ -302,7 +302,7 @@ extra
 
 applying filters (effects) to video (images)
 
-```
+```cpp
 //filter images
 //note that there are better and more efficient ways to do this using shaders
 import processing.video.*;
@@ -333,7 +333,7 @@ extra2
 
 (advanced) drawing to a PGraphics, applying a filter and then stretching out to display dimensions
 
-```
+```cpp
 //filter graphics
 import processing.sound.*;
 AudioIn input;
@@ -369,7 +369,7 @@ void draw() {
 extra3
 --
 
-```
+```cpp
 //scrolling spectrogram
 //could be improved with exponential mapping
 import processing.sound.*;
@@ -407,7 +407,7 @@ void draw() {
 bonus
 --
 
-```
+```cpp
 //screensaver with mic input
 import processing.sound.*;
 AudioIn input;
