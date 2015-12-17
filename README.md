@@ -15,7 +15,7 @@ dates
 - [x] [26nov 14-17](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151126): processing
 - [x] [03dec 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151203): sines
 - [x] [10dec 14-17](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151210): spirals
-- [ ] 17dec 14-16
+- [ ] [17dec 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151217): glitches
 - [ ] 24dec: **NO CLASS**
 - [ ] 31dec: **NO CLASS**
 - [ ] 07jan 14-16
