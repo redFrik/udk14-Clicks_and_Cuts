@@ -18,7 +18,7 @@ dates
 - [x] [17dec 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk151217): glitches
 - [ ] 24dec: **NO CLASS**
 - [ ] 31dec: **NO CLASS**
-- [ ] 07jan 14-16
+- [ ] [07jan 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160107): crackles
 - [ ] 14jan 14-16
 - [ ] 21jan 14-16
 - [ ] 28jan 14-16
