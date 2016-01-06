@@ -19,7 +19,7 @@ simulation
 
 supercollider code
 
-´´´
+```
 s.boot
 
 b= Buffer.read(s, "/Applications/Max.app/Contents/Resources/C74/media/msp/duduk.aif") //edit to match your own mono file
@@ -47,4 +47,4 @@ b.plot //just to see and make sure it was loaded
     Pan2.ar(XFade2.ar(src2, src, MouseButton.kr(-1, 1, 0.2)), LFNoise2.kr(1, 0.5)); //0.2 is xfade time
 }.play
 )
-´´´
+```
