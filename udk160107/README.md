@@ -68,6 +68,27 @@ b.plot //just to see and make sure it was loaded
 )
 ```
 
+record sound into buffer with mic.  (also you can of course use Audacity)
+
+```
+s.boot
+
+b= Buffer.alloc(s, 3*s.sampleRate); //create an empty 3sec mono buffer
+
+
+//run this once to record from mic into buffer
+(
+{
+    RecordBuf.ar(SoundIn.ar, b, loop: 0, doneAction:2);
+}.play;
+)
+
+
+b.plot; //see
+b.play; //test
+```
+
+
 automatic cutup...
 
 ```
