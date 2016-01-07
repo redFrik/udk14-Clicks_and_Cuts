@@ -8,11 +8,29 @@ scotch tape, razorblade, cd, cd player
 reading
 --
 
-Caleb Kelly - [Cracked and Broken Media in 20th and 21st Century Music and Sound](http://www.canberra.edu.au/researchrepository/file/1d26377d-9390-2343-97c6-d68b52a1ab32/1/full_text.pdf)
+[Julien Herion - Yasunao Tone’s Solo for Wounded CD and the Aesthetics of Failure](http://www.academia.edu/8204212/Yasunao_Tones_Solo_for_Wounded_CD_and_the_Aesthetics_of_Failure)
+
+Caleb Kelly - [Cracked and Broken Media in 20th and 21st Century Music and Sound](http://www.canberra.edu.au/researchrepository/file/1d26377d-9390-2343-97c6-d68b52a1ab32/1/full_text.pdf) (chapter 3)
 
 Caleb Stuart - Yasunao Tone's Wounded and Skipping Compact Discs: From Improvisation and Indeterminate Composition to Glitching CDs. Leonardo Electronic Almanac, vol. 10, no. 9, 2002
 
 Caleb Stuart - Damaged Sound: Glitching and Skipping Compact Discs in the Audio of Yasunao Tone, Nicolas Collins and Oval. In Leonardo Music Journal 13 (2003): 47-52
+
+<https://en.wikipedia.org/wiki/C2_error>
+
+listening
+--
+
+[Yasunao Tone - Solo for Wounded CD](https://www.youtube.com/watch?v=ElF5pb7sos8)
+
+<https://soundandinteraction.wordpress.com/nick/>
+
+vinyl
+--
+
+[Thomas Brinkmann - live clicks and cuts](https://www.youtube.com/watch?v=t8dOo-jBkxM)
+
+[Christian Marclay - Record Without a Cover](https://en.wikipedia.org/wiki/Record_Without_a_Cover)
 
 simulation
 --
