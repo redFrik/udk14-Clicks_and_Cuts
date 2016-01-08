@@ -143,7 +143,7 @@ more advanced examples.  try with different type of sounds - drumloops, drones, 
 )
 ```
 
-another example that uses ascii values from a string to set the playback rate.
+another example that uses ascii values from a string to set the trigger rate.
 
 ```
 (
@@ -242,10 +242,9 @@ Ndef(\e, {|pfreq= 4, rate= 1| GrainBuf.ar(1, Impulse.kr(pfreq), 1, b, rate+LFNoi
 Ndef(\f, {|pfreq= 4, rate= 1| GrainBuf.ar(1, Impulse.kr(pfreq), 1, b, rate+LFNoise2.kr(1))}).play;
 )
 NdefMixer(s);
-``
+```
 
-
-extra
+bonus
 --
 
 simple example demonstrating how to send numbers from processing to supercollider for soundfile playback.
