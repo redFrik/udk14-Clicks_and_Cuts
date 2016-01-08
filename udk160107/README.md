@@ -249,7 +249,9 @@ bonus
 
 simple example demonstrating how to send numbers from processing to supercollider for soundfile playback.
 
-click the mouse to play next soundfile. you will need to install the oscP5 library for processing and provide a folder with soundfiles (see `var names`...).
+click the mouse to play next soundfile. if you click on the left of the processing window, the sound will play in left speaker, and likewise on the right.
+
+you will need to install the oscP5 library for processing and provide a folder with soundfiles (see `var names`...).
 
 ```
 //--supercollider code...
@@ -263,9 +265,9 @@ s.waitForBoot{
         msg.postln;  //debug
         path= names.wrapAt(msg[1]);
         path.postln;  //debug
-        b.free;  //free previous buffer
-        b= Buffer.readChannel(s, path, channels: [0], action:{|x|
-            {PlayBuf.ar(1, x, 1, doneAction:2)!2}.play(fadeTime: 0);  //fadeTime is attack
+        Buffer.readChannel(s, path, channels: [0], action:{|buf|
+            var syn= {Pan2.ar(PlayBuf.ar(1, buf, 1, doneAction:2), msg[2])}.play(fadeTime: 0);  //fadeTime is attack
+            syn.onFree({buf.free});
         });
     }, \file);
 };
@@ -296,6 +298,11 @@ void mousePressed() {
 void sendOsc(int i) {      //osc out
     OscMessage msg= new OscMessage("/file");
     msg.add(i);
+    if(mouseX>(width*0.5)) {
+        msg.add(1);  //pan right
+    } else {
+        msg.add(-1);  //pan left
+    }
     oscP5.send(msg, supercollider);
 }
 ```
