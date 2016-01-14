@@ -19,7 +19,7 @@ dates
 - [ ] 24dec: **NO CLASS**
 - [ ] 31dec: **NO CLASS**
 - [x] [07jan 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160107): crackles
-- [ ] 14jan 14-16
+- [ ] [14jan 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160114): ascii
 - [ ] 21jan 14-16
 - [ ] 28jan 14-16
 - [ ] 04feb 14-16
