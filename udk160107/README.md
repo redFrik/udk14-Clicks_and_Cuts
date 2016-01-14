@@ -5,6 +5,8 @@ material:
 
 scotch tape, razorblade, cd, cd player
 
+![cd_scratched.jpg](cd_scratched.jpg?raw=true "cd_scratched.jpg")
+
 reading
 --
 
