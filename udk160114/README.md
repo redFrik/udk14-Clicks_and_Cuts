@@ -28,9 +28,13 @@ reading
 
 <https://en.wikipedia.org/wiki/ASCII_art>
 
+<http://www.belpercomputing.com/wp-content/uploads/2015/12/ASCII-Table.svg>
+
 extra
 --
 
-related...
+open Terminal and type `telnet towel.blinkenlights.nl`
+
+also related...
 
 [Rocky's Printer - Eye of the tiger on a dot matrix printer ](https://www.youtube.com/watch?v=u8I6qt_Z0Cg)
