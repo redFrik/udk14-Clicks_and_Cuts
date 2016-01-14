@@ -73,7 +73,9 @@ Ndef(\ascii).stop;
 graphics
 --
 
-open sketch_160114a etc in processing.
+open sketches sketch_160114a to sketch_160114j in processing.
+
+![ascii0.png](ascii0.png?raw=true "ascii0.png")
 
 ![ascii1.png](ascii1.png?raw=true "ascii1.png")
 
