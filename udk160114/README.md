@@ -75,6 +75,17 @@ graphics
 
 open sketches sketch_160114a to sketch_160114j in processing.
 
+* [sketch_160114a](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160114/sketch_160114a/sketch_160114a.pde)
+* [sketch_160114b](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160114/sketch_160114b/sketch_160114b.pde)
+* [sketch_160114c](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160114/sketch_160114c/sketch_160114c.pde)
+* [sketch_160114d](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160114/sketch_160114d/sketch_160114d.pde)
+* [sketch_160114e](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160114/sketch_160114e/sketch_160114e.pde)
+* [sketch_160114f](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160114/sketch_160114f/sketch_160114f.pde)
+* [sketch_160114g](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160114/sketch_160114g/sketch_160114g.pde)
+* [sketch_160114h](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160114/sketch_160114h/sketch_160114h.pde)
+* [sketch_160114i](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160114/sketch_160114i/sketch_160114i.pde)
+* [sketch_160114j](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160114/sketch_160114j/sketch_160114j.pde)
+
 ![ascii0.png](ascii0.png?raw=true "ascii0.png")
 
 ![ascii1.png](ascii1.png?raw=true "ascii1.png")
