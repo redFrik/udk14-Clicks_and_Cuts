@@ -22,12 +22,14 @@ today (max v7.1) things look more stylish...
 
 let's build something very simple...
 
-![random_muisc_max.png](random_muisc_max.png?raw=true "random_muisc_max.png")
+![random_music_max.png](random_music_max.png?raw=true "random_music_max.png")
 
-now look at drunk.maxpat and fileplayer.maxpat.
+now look at `drunk.maxpat` and `fileplayer.maxpat` (see top of this page).
 
 nato.0+55
 --
+
+amazing video library for maxmsp. no longer available.
 
 <https://en.wikipedia.org/wiki/Nato.0%2B55%2B3d>
 
@@ -52,8 +54,92 @@ some examples of typical nn/integer/antiorp emails...
 puredata
 --
 
-there's also a free and open-source alternative.  see <pure-data.info>.  pure-data can do sound and graphics (gem) just as well as maxmsp but it's less 'polished' and don't come with as many examples and helpfiles.
+there's also a free and open-source alternative to maxmsp. see <http://pure-data.info>. pure-data can do sound and graphics (gem) just as well as maxmsp but it's less 'polished' and doesn't come with as many examples and helpfiles.
 
 here's the same patch as above but written for pd...
 
 ![random_muisc_pd.png](random_muisc_pd.png?raw=true "random_muisc_pd.png")
+
+bonus (advanced)
+--
+
+command line sound effects (in terminal):
+
+`brew install sox` #on osx with brew
+
+then you can do...
+
+`play /Applications/Max.app/Contents/Resources/C74/media/msp/cherokee.aif echo 0.8 0.9 1000 0.3 reverb 80`
+
+see <http://h3manth.com/2009/01/08/sox-sound-exchange-2>
+
+```
+//or in realtime with supercollider
+s.boot
+
+//test with mic
+{AllpassN.ar(SoundIn.ar, 1, 0.4, 4)!2}.play
+{CombN.ar(SoundIn.ar, 1, 0.4, 4)!2}.play
+
+//test with file
+b= Buffer.read(s, "/Applications/Max.app/Contents/Resources/C74/media/msp/cherokee.aif")
+
+{Splay.ar(AllpassN.ar(PlayBuf.ar(b.numChannels, b, loop:0), 1, 0.4, 4))}.play
+{CombN.ar(PlayBuf.ar(1, b, loop:0), 1, 0.2, 2)!2}.play
+
+//detecting when echo is done and the sound is silent
+(
+a= {
+    var snd= PlayBuf.ar(b.numChannels, b);
+    var efx= CombN.ar(snd, 0.25, 0.25, 2);
+    DetectSilence.ar(efx, doneAction:2);
+    Splay.ar(efx);
+}.play;
+a.onFree({
+    "done!".postln;
+    NetAddr("127.0.0.1", 12345).sendMsg(\done); //send to processing
+});
+)
+
+//or with the AllpassN
+(
+a= {
+    var snd= PlayBuf.ar(b.numChannels, b);
+    var efx= AllpassN.ar(snd, 0.25, 0.25, 2);
+    DetectSilence.ar(efx, doneAction:2);
+    Splay.ar(efx);
+}.play;
+a.onFree({
+    "done!".postln;
+    NetAddr("127.0.0.1", 12345).sendMsg(\done); //send to processing
+});
+)
+
+//or with reverb
+(
+a= {
+    var snd= PlayBuf.ar(b.numChannels, b);
+    var efx= GVerb.ar(snd, 300, 5, 0.5, 0.9, 50, 1, 0.9, 0.9);
+    DetectSilence.ar(efx, doneAction:2);
+    Splay.ar(efx);
+}.play;
+a.onFree({
+    "done!".postln;
+    NetAddr("127.0.0.1", 12345).sendMsg(\done); //send to processing
+});
+)
+
+//or this variant
+(
+a= {
+    var snd= PlayBuf.ar(b.numChannels, b);
+    var efx= Mix.fill(8, {snd= snd+AllpassN.ar(LPF.ar(snd, 10000.rand), 0.4, 0.4.rand, 3)});
+    DetectSilence.ar(efx, doneAction:2);
+    Splay.ar(efx);
+}.play;
+a.onFree({
+    "done!".postln;
+    NetAddr("127.0.0.1", 12345).sendMsg(\done); //send to processing
+});
+)
+```
