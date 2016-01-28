@@ -7,10 +7,15 @@ maxmsp
 
 please download and install the demo of maxmsp <http://cycling74.com>
 
-jitter
---
+very good series of maxmspjitter tutorials <https://www.youtube.com/watch?v=5RYy8Cvgkqk&list=PLD45EDA6F67827497>
 
-extension to maxmsp for graphics.
+a typical max patch from back-in-the-days (max v4.1)...
+
+![modsquad_os9.png](modsquad_os9.png?raw=true "modsquad_os9.png")
+
+today (max v7.1) things look more stylish...
+
+![modsquad.png](modsquad.png?raw=true "modsquad.png")
 
 nato.0+55
 --
@@ -34,8 +39,3 @@ some examples of typical nn/integer/antiorp emails...
 <http://mail.bek.no/pipermail/55/2005-October/006636.html>
 
 <http://music.columbia.edu/pipermail/music-dsp/1999-February/033416.html>
-
-resources
---
-
-very good series of maxmspjitter tutorials <https://www.youtube.com/watch?v=5RYy8Cvgkqk&list=PLD45EDA6F67827497>
