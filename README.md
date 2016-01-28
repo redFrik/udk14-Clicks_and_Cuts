@@ -21,7 +21,7 @@ dates
 - [x] [07jan 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160107): crackles
 - [x] [14jan 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160114): ascii
 - [x] [21jan 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160121): feedback
-- [ ] [28jan 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160128): patching
+- [x] [28jan 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160128): patching
 - [ ] 04feb 14-16
 - [ ] 11feb 14-16
 

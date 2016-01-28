@@ -1,6 +1,7 @@
 patching
 --
 
+programming with patchcoords and object boxes.
 
 maxmsp
 --
@@ -16,6 +17,14 @@ a typical max patch from back-in-the-days (max v4.1)...
 today (max v7.1) things look more stylish...
 
 ![modsquad.png](modsquad.png?raw=true "modsquad.png")
+
+(in max7 you can find ModSquad.maxpat by clicking on filebrowser (to the left), and then search for modsquad)
+
+let's build something very simple...
+
+![random_muisc_max.png](random_muisc_max.png?raw=true "random_muisc_max.png")
+
+now look at drunk.maxpat and fileplayer.maxpat.
 
 nato.0+55
 --
@@ -39,3 +48,12 @@ some examples of typical nn/integer/antiorp emails...
 <http://mail.bek.no/pipermail/55/2005-October/006636.html>
 
 <http://music.columbia.edu/pipermail/music-dsp/1999-February/033416.html>
+
+puredata
+--
+
+there's also a free and open-source alternative.  see <pure-data.info>.  pure-data can do sound and graphics (gem) just as well as maxmsp but it's less 'polished' and don't come with as many examples and helpfiles.
+
+here's the same patch as above but written for pd...
+
+![random_muisc_pd.png](random_muisc_pd.png?raw=true "random_muisc_pd.png")
