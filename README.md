@@ -22,8 +22,8 @@ dates
 - [x] [14jan 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160114): ascii
 - [x] [21jan 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160121): feedback
 - [x] [28jan 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160128): patching
-- [ ] 04feb 14-16
-- [ ] 11feb 14-16
+- [ ] [04feb 14-16](https://github.com/redFrik/udk14-Clicks_and_Cuts/tree/master/udk160204): odds and ends
+- [ ] 11feb 14-16: repetition
 
 note: every other week we do 3h
 
