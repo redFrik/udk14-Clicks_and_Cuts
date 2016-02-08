@@ -30,11 +30,27 @@ s.waitForBoot{
     });
 };
 )
+
+
+//some simple testsounds
+{SinOsc.ar(MouseX.kr(1, 999))!2}.play;
+{Saw.ar(MouseX.kr(50, 500))!2}.play;
+{Pulse.ar(140)*0.1!2}.play;
+{SoundIn.ar!2}.play;
+
+
+{Saw.ar(XLine.kr(4000, 40, 20))}.play;
+{LFTri.ar(XLine.kr(4000, 40, 20))}.play;
+{LFTri.ar(60)}.play;
+{LFTri.ar(59.5)}.play;
 ```
 
-now start the processing with the sketch 'waveToProcessing.pde' and play some supercollider sounds you have made.
+now start processing with the sketch 'waveToProcessing.pde' and play some supercollider sounds you have made.
+
+note: you will need to have the library OscP5 installed. to install it from within processing click on 'tools' and 'Add Tool...' and then 'libraries' and then search for 'oscp5'. select it and click install.
 
 ```cpp
+//waveToProcessing.pde
 import oscP5.*;
 import netP5.*;
 OscP5 oscP5;
@@ -94,12 +110,14 @@ void draw() {
 
 ![waveToProcessing.png](waveToProcessing.png?raw=true "waveToProcessing.png")
 
+note: you will need to have the video library installed. see above on how to install it.
+
 slitscan
 --
 
 ```cpp
 import processing.video.*;
-final int numDelays= 12;
+final int numDelays= 12;  //try changing this
 PImage img;
 Capture cam;
 void setup() {
@@ -121,4 +139,28 @@ void draw() {
 }
 ```
 
-also see the examples SlitScan, Spatiotemporal and Time Displacement. they are in in File / Examples / Libraries / Video /
+also see the examples SlitScan, Spatiotemporal and Time Displacement. they are in File / Examples / Libraries / Video /
+
+extra
+--
+
+```cpp
+import processing.video.*;
+Capture cam;
+void setup() {
+    size(800, 800);
+    cam = new Capture(this, width, height);
+    cam.start();
+    background(0);
+}
+void draw() {
+    if (cam.available()) {
+        cam.read();
+        translate(width*0.5, height*0.5);
+        rotate(frameCount* -0.005);  //rotation speed
+        scale(1, 0.1);
+        translate(-width*0.5, -height*0.5);
+        image(cam, 0, 0);
+    }
+}
+```
