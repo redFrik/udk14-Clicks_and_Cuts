@@ -49,7 +49,7 @@ exercise2
 
 use [supercollider](http://supercollider.github.io/download.html) to make an endlessly varying sound texture composition.
 
-```
+```supercollider
 //scrambler.scd
 s.boot;
 

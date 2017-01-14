@@ -41,7 +41,7 @@ sound
 
 run these examples in supercollider.  for the feedback to work use the built in laptop speakers and not headphones.  also play around with the laptop volume.
 
-```
+```supercollider
 s.boot
 
 //try whistling

@@ -69,7 +69,7 @@ listening
 example supercollider code
 --
 
-```
+```supercollider
 s.boot
 
 {LFPulse.ar(0.7)}.scope //lots of dc offset - bad for the speaker

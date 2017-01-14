@@ -8,7 +8,7 @@ sound
 
 supercollider...
 
-```
+```supercollider
 s.boot
 
 65.asAscii
@@ -56,7 +56,7 @@ Ndef(\text4, {SinOsc.ar( Duty.ar(0.2, 0, Dseq("xxxxxx   ".ascii.midicps, inf)))!
 NdefMixer(s) //makes a gui automatically
 ```
 
-```
+```supercollider
 s.reboot;
 
 Ndef(\ascii).play;

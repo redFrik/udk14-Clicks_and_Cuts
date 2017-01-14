@@ -49,7 +49,7 @@ you can download the soundfiles used below from here...
 
 but i highly recommend you use your own mono soundfiles.
 
-```
+```supercollider
 s.boot
 
 b.free
@@ -109,7 +109,7 @@ b.plot //just to see and make sure it was loaded
 
 more advanced examples.  try with different type of sounds - drumloops, drones, recorded instruments, voices.
 
-```
+```supercollider
 //
 
 (
@@ -147,7 +147,7 @@ more advanced examples.  try with different type of sounds - drumloops, drones, 
 
 another example that uses ascii values from a string to set the trigger rate.
 
-```
+```supercollider
 (
 a= {|rate= 1|
     var trigger= Impulse.ar(rate);
@@ -177,7 +177,7 @@ a.release(2) //fade out in 2sec
 
 record sound into buffer with mic.  (also you can of course use Audacity)
 
-```
+```supercollider
 s.boot
 
 b= Buffer.alloc(s, 3*s.sampleRate); //create an empty 3sec mono buffer
@@ -200,7 +200,7 @@ b.write("~/mybuff.aiff".standardizePath);
 
 automatic cutup...
 
-```
+```supercollider
 //read a drumloop
 b= Buffer.readChannel(s, "/Applications/Max.app/Contents/Resources/C74/media/msp/jongly.aif", channels:[0]); //edit
 
@@ -222,7 +222,7 @@ b= Buffer.readChannel(s, "/Applications/Max.app/Contents/Resources/C74/media/msp
 
 last also try GrainBuf - as opposed to PlayBuf it will play a lot of overlapping segments of the soundfile and also apply an envelope (no click and you can control attack and release time).
 
-```
+```supercollider
 {GrainBuf.ar(1, Impulse.kr(MouseX.kr(1, 100)), 1, b)}.play
 
 {GrainBuf.ar(1, Impulse.kr(MouseX.kr(1, 100)), 1, b, MouseY.kr(0.1, 2)+LFNoise2.kr(1))}.play
@@ -234,7 +234,7 @@ extra
 
 gui control. set volume with left hand side sliders, click 'ed' to edit indidivual parameters.
 
-```
+```supercollider
 (
 Ndef(\a, {|pfreq= 4, rate= 1| GrainBuf.ar(1, Impulse.kr(pfreq), 1, b, rate+LFNoise2.kr(1))}).play;
 Ndef(\b, {|pfreq= 4, rate= 1| GrainBuf.ar(1, Impulse.kr(pfreq), 1, b, rate+LFNoise2.kr(1))}).play;
@@ -255,7 +255,7 @@ click the mouse to play next soundfile. if you click on the left of the processi
 
 you will need to install the oscP5 library for processing and provide a folder with soundfiles (see `var names`...).
 
-```
+```supercollider
 //--supercollider code...
 (
 s.latency= 0.05;

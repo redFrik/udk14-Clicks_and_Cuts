@@ -3,7 +3,7 @@ sines
 
 width the math function sin(x), for whatever x is you will always get an output number somewhere between -1.0 and 1.0.
 
-```
+```supercollider
 sin(0) = 0.0
 
 sin(1.57) ≈ 1.0     //top of curve
@@ -222,7 +222,7 @@ supercollider
 
 experiments with simple sines
 
-```
+```supercollider
 s.boot
 s.scope
 
@@ -276,7 +276,7 @@ b= (1..5);
 ```
 there is also the sin(x) function...
 
-```
+```supercollider
 //check the post window
 {Sweep.ar(0, 1).poll; Silent.ar}.play
 {sin(Sweep.ar(0, 1)).poll; Silent.ar}.play

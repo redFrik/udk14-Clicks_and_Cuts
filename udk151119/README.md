@@ -54,7 +54,7 @@ exercise3
 
 use [supercollider](http://supercollider.github.io/download.html) to apply sample rate reduction and bit depth reduction
 
-```
+```supercollider
 //crusher.scd
 s.boot;
 
@@ -105,7 +105,7 @@ now do the same but with some samples from here...
 
 <http://www.musicradar.com/news/tech/free-music-samples-download-loops-hits-and-multis-627820>
 
-```
+```supercollider
 //crusher_soundfile.scd
 s.boot;
 
@@ -155,7 +155,7 @@ b= Buffer.read(s, "/Users/asdf/musicradar-nu-disco-samples/125bpm Loops n Lines/
 extra
 --
 
-```
+```supercollider
 //changing playback speed with mouse
 {PlayBuf.ar(b.numChannels, b, MouseX.kr(-1, 2).poll, loop:1).round(0.5**MouseY.kr(1, 16))}.play;
 ```
@@ -163,7 +163,7 @@ extra
 extra2
 --
 
-```
+```supercollider
 //my crusher - use as a general effect - XFade2 with MouseX crossfades between 'dry' and 'wet' sound
 (
 {

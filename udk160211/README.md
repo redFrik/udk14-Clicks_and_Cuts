@@ -31,7 +31,7 @@ void sendOscFloat(float x, float y) {      //osc out
 
 corresponding supercollider code...
 
-```
+```supercollider
 //start the server
 s.boot;
 

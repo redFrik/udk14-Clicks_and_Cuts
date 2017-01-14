@@ -44,13 +44,13 @@ void draw() {
 fm synthesis
 --
 
-```
+```supercollider
 s.boot;
 
 {BLowPass4.ar(SinOsc.ar(99, SinOsc.ar(SinOsc.ar([50, 50.1])*200)*MouseX.kr(0, 40)))}.play;
 ```
 
-```
+```supercollider
 s.scope
 
 {SinOsc.ar(500, 0, 0.5)+SinOsc.ar(840, 0, 0.5)}.play

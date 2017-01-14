@@ -41,7 +41,7 @@ supercollider
 
 careful - the sounds below might be very loud.
 
-```
+```supercollider
 {LFSaw.ar(1)}.play //non-band limited
 {Saw.ar(1)}.play  //band limited - not generating frequencies >22050 (half s.r.)
 
@@ -74,7 +74,7 @@ download and install sc3 plugins (3.6 SC3ExtPlugins-universal.dmg for osx, sc3-p
 
 http://sourceforge.net/projects/sc3-plugins/files/
 
-```
+```supercollider
 {Limiter.ar(GlitchBPF.ar(Saw.ar([500, 600]), -2, 1000))}.play
 {Limiter.ar(FreeVerb.ar(GlitchBPF.ar(Saw.ar, Saw.ar(1), SinOsc.ar([0.4, 0.5])*2000)))}.play
 {Limiter.ar(GlitchRHPF.ar(SinOsc.ar(1000), Saw.ar(8)*2, SinOsc.ar([4.01, 3.06])*2000))}.play
@@ -88,7 +88,7 @@ http://sourceforge.net/projects/sc3-plugins/files/
 {Limiter.ar(MoogFF.ar(Saw.ar(10), 500000*Saw.ar(3), 4*Saw.ar(2.01)))}.play
 ```
 
-```
+```supercollider
 //	attack of the mutant pigs
 //	/fO 020104
 
@@ -105,7 +105,7 @@ extra
 
 loading soundfiles and playing back using a pattern sequencer
 
-```
+```supercollider
 s.boot;
 
 (
@@ -192,7 +192,7 @@ bonus
 
 spiral example ported to supercollider
 
-```
+```supercollider
 (
 var width= 800, height= 600;
 var win= Window("spiral", Rect(100, 100, width, height), false);

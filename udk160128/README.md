@@ -73,7 +73,7 @@ then you can do...
 
 see <http://h3manth.com/2009/01/08/sox-sound-exchange-2>
 
-```
+```supercollider
 //or in realtime with supercollider
 s.boot
 

@@ -4,7 +4,7 @@ odds and ends
 soundwaves
 --
 
-```
+```supercollider
 //waveToProcessing.scd
 (
 s.latency= 0.025;
