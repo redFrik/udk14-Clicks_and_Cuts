@@ -1,24 +1,24 @@
 general course introduction
 --------------------
 
-* links to previous semesters... <http://redfrik.github.io/udk00-Audiovisual_Programming/>
+* links to previous semesters... <https://redfrik.github.io/udk00-Audiovisual_Programming/>
 * and dates + times for this course... <https://github.com/redFrik/udk14-Clicks_and_Cuts> <-save this page
 
 
 software
 --
 
-* [SuperCollider](http://supercollider.github.io/download.html)
-* [Processing](http://processing.org)
-* [Audacity](http://audacityteam.org)
-* and perhaps some [Arduino](http://www.arduino.cc)
+* [SuperCollider](https://supercollider.github.io/download.html)
+* [Processing](https://processing.org)
+* [Audacity](https://audacityteam.org)
+* and perhaps some [Arduino](https://www.arduino.cc)
 
 
 hardware
 --
 
 * speaker element
-* 1.5v battery
+* 1.5V battery
 * wires
 * resonant boxes
 * 220uF capacitor
@@ -60,9 +60,9 @@ https://en.wikipedia.org/wiki/Glitch_(music)
 listening
 --
 
-[Ryoji Ikeda - data.matrix](https://youtu.be/F5hhFMSAuf4)
+[Ryoji Ikeda - data.matrix](https://www.youtube.com/watch?v=F5hhFMSAuf4)
 
-[SND - 00009 A.1](https://youtu.be/EqCjyu9YjMs)
+[SND - 00009 A.1](https://www.youtube.com/watch?v=EqCjyu9YjMs)
 
 <https://en.wikipedia.org/wiki/Clicks_%26_Cuts> compilation cd
 

@@ -72,7 +72,7 @@ careful - the sounds below might be very loud.
 
 download and install sc3 plugins (3.6 SC3ExtPlugins-universal.dmg for osx, sc3-plugins-3.6.0-win32.zip for win)
 
-http://sourceforge.net/projects/sc3-plugins/files/
+https://supercollider.github.io/sc3-plugins/
 
 ```supercollider
 {Limiter.ar(GlitchBPF.ar(Saw.ar([500, 600]), -2, 1000))}.play

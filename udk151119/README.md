@@ -3,12 +3,12 @@ crush experiments
 
 please bring laptop+headphones.
 
-and download and install audacity <http://audacityteam.org>
+and download and install audacity <https://audacityteam.org>
 
 listening
 --
 
-[DAT politics](http://www.datpolitics.com) - Hardwai
+[DAT politics](https://www.datpolitics.com) - Hardwai
 
 reading
 --
@@ -52,7 +52,7 @@ now experiment with different sounds, samplerates, speeds.
 exercise3
 --
 
-use [supercollider](http://supercollider.github.io/download.html) to apply sample rate reduction and bit depth reduction
+use [supercollider](https://supercollider.github.io/download.html) to apply sample rate reduction and bit depth reduction
 
 ```supercollider
 //crusher.scd
@@ -103,7 +103,7 @@ exercise4
 
 now do the same but with some samples from here...
 
-<http://www.musicradar.com/news/tech/free-music-samples-download-loops-hits-and-multis-627820>
+<https://www.musicradar.com/news/tech/free-music-samples-download-loops-hits-and-multis-627820>
 
 ```supercollider
 //crusher_soundfile.scd

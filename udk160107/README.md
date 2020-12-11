@@ -10,7 +10,7 @@ scotch tape, razorblade, cd, cd player
 reading
 --
 
-[Julien Herion - Yasunao Tone’s Solo for Wounded CD and the Aesthetics of Failure](http://www.academia.edu/8204212/Yasunao_Tones_Solo_for_Wounded_CD_and_the_Aesthetics_of_Failure)
+[Julien Herion - Yasunao Tone’s Solo for Wounded CD and the Aesthetics of Failure](https://www.academia.edu/8204212/Yasunao_Tones_Solo_for_Wounded_CD_and_the_Aesthetics_of_Failure)
 
 Caleb Kelly - [Cracked and Broken Media in 20th and 21st Century Music and Sound](http://www.canberra.edu.au/researchrepository/file/1d26377d-9390-2343-97c6-d68b52a1ab32/1/full_text.pdf) (chapter 3)
 

@@ -3,7 +3,7 @@ cut experiments
 
 please bring laptop+headphones.
 
-and download and install audacity <http://audacityteam.org>
+and download and install audacity <https://audacityteam.org>
 
 listening
 --
@@ -47,7 +47,7 @@ save it as a .wav or .aiff soundfile and make a few more.
 exercise2
 --
 
-use [supercollider](http://supercollider.github.io/download.html) to make an endlessly varying sound texture composition.
+use [supercollider](https://supercollider.github.io/download.html) to make an endlessly varying sound texture composition.
 
 ```supercollider
 //scrambler.scd
@@ -137,4 +137,4 @@ exercise3
 
 now do the same but with some samples from here...
 
-<http://www.musicradar.com/news/tech/free-music-samples-download-loops-hits-and-multis-627820>
+<https://www.musicradar.com/news/tech/free-music-samples-download-loops-hits-and-multis-627820>

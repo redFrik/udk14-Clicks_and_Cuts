@@ -6,7 +6,7 @@ programming with patchcoords and object boxes.
 maxmsp
 --
 
-please download and install the demo of maxmsp <http://cycling74.com>
+please download and install the demo of maxmsp <https://cycling74.com>
 
 very good series of maxmspjitter tutorials <https://www.youtube.com/watch?v=5RYy8Cvgkqk&list=PLD45EDA6F67827497>
 
@@ -43,18 +43,18 @@ article about nato.0+55 <http://www.bootsquad.com/old_site/nato/nato00.html>
 
 some examples of typical nn/integer/antiorp emails...
 
-<http://lists.puredata.info/pipermail/pd-ot/2000-06/000220.html>
+<https://lists.puredata.info/pipermail/pd-ot/2000-06/000220.html>
 
-<http://music.columbia.edu/pipermail/music-dsp/2000-June/037827.html>
+<https://music.columbia.edu/pipermail/music-dsp/2000-June/037827.html>
 
 <http://mail.bek.no/pipermail/55/2005-October/006636.html>
 
-<http://music.columbia.edu/pipermail/music-dsp/1999-February/033416.html>
+<https://music.columbia.edu/pipermail/music-dsp/1999-February/033416.html>
 
 puredata
 --
 
-there's also a free and open-source alternative to maxmsp. see <http://pure-data.info>. pure-data can do sound and graphics (gem) just as well as maxmsp but it's less 'polished' and doesn't come with as many examples and helpfiles.
+there's also a free and open-source alternative to maxmsp. see <https://puredata.info>. pure-data can do sound and graphics (gem) just as well as maxmsp but it's less 'polished' and doesn't come with as many examples and helpfiles.
 
 here's the same patch as above but written for pd...
 
@@ -71,7 +71,7 @@ then you can do...
 
 `play /Applications/Max.app/Contents/Resources/C74/media/msp/cherokee.aif echo 0.8 0.9 1000 0.3 reverb 80`
 
-see <http://h3manth.com/2009/01/08/sox-sound-exchange-2>
+see <https://h3manth.com/2009/01/08/sox-sound-exchange-2>
 
 ```supercollider
 //or in realtime with supercollider

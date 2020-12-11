@@ -3,7 +3,7 @@ graphics in processing
 
 please bring laptop.
 
-and download and install processing version 3 <http://processing.org>. version 2 will work except for the last audio examples.
+and download and install processing version 3 <https://processing.org>. version 2 will work except for the last audio examples.
 
 
 excercise1
